@@ -1,0 +1,193 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="berivan_ildiz.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="materials.html">Матеріали</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="materials.html">Матеріали</a>
+        <a href="news.html">Новини</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="berivan_ildiz.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="berivan_ildiz.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+      <!-- <div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/7_Berivan.jpg"
+         alt="foto">
+        </div>
+
+
+
+
+     <button class="collapsible">Зміст</button>
+    <div class="content">
+      <ol>
+          <li><a href="#1-id">Освіта</a></li>
+          <li><a href="#2-id">Досвід</a></li>
+          <li><a href="#3-id">Про мене</a></li>
+
+        </ol>
+    </div>
+
+ <script>
+            let coll = document.getElementsByClassName('collapsible');
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px'
+                             }
+                        })
+            }
+        </script>
+
+<h2 id="1-id">Освіта</h2>
+
+ <ul>
+     <li class="text">Agri Ibrahim Cecen University - психологічне консультування та орієнтація, Туреччина (2015-2019 рр.)
+</li><p></p>
+     <li class="text">Cardinal Stefan Wyszynski University, Erasmus -  психологія та педагогіка, Варшава (2017-2018 рр.)
+</li><p></p>
+     <li class="text">SWPS University of Social Sciences and Humanities - англійська підготовча, Варшава (2019-2020 рр.)
+</li><p></p>
+     <li class="text">University of Economics and Human Sciences - клінічна психологія, магістр, Варшава (2020-2022 рр.)
+</li><p></p>
+
+        </ul>
+
+<h2 id="2-id">Досвід</h2>
+
+        <ul>
+     <li class="text">2016-2019 - психологічне консультування учнів початкової та старшої школи
+</li><p></p>
+    <li class="text">з 2022 - вчитель англійської в дитячому садочку в Варшаві
+</li><p></p>
+            <li class="text">Використовую весь свій досвід, а також інтерактивні та сучасні методи навчання та матеріали на своїх заняттях
+</li><p></p>
+        </ul>
+<br>
+        <h2 id="3-id">Про мене</h2>
+        <p><strong>Іноземна мова для мене</strong> - це набуття здатності правильно спілкуватися з людьми з інших культур, зчитування емоцій з їхньої мови та здатність асимілюватися з місцевими жителями, коли ви живете в чужій країні</p>
+        <p><strong>Якби не була вчителем </strong>-  я була б психологом і проводила психологічні консультації</p>
+        <p><strong>Моє життєве кредо:</strong>  Якщо життя дає вам лимони, робіть лимонад</p>
+        <p><strong>Хотіла б, щоб</strong>  люди жили в мирі</p>
+        <p><strong>На дозвіллі</strong>   я люблю подорожувати та досліджувати нові місця</p>
+        <p><strong>Книга, до котрої повертаюся </strong>-   «Serenad» Zülfü Livaneli</p>
+        <p><strong>В інших людях ціную</strong> доброзичливість і позитивний настрій</p>
+        <p><strong>Моя суперсила </strong>-  чуйність до того, що думають і відчувають інші люди</p>
+        <p><strong>На безлюдний острів </strong>  багато книжок, щоб не нудьгувати і запальничку, щоб легко розпалити вогонь!</p>
+</div>
+
+
+
+
+
+
+    <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+    </body>
+</html>

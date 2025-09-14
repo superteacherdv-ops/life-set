@@ -1,0 +1,176 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="marianna.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.pl.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.pl.html">główna</a></li>
+            <li><a href="about.pl.html">o nas</a></li>
+            <li><a href="specialists.pl.html">specjaliści</a></li>
+            <li><a href="materials.pl.html">materiały</a></li>
+            <li><a href="news.pl.html">Aktualności</a></li>
+            <li><a href="contacts.pl.html">Kontakty</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.pl.html">Główna</a>
+        <a href="about.pl.html">O nas</a>
+        <a href="specialists.pl.html">Specjaliści</a>
+        <a href="materials.pl.html">Materiały</a>
+        <a href="news.pl.html">Aktualności</a>
+        <a href="contacts.pl.html">Kontakty</a>
+
+    </nav>
+    </div>
+
+      <div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/poland.png">PL</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="marianna.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="marianna.en.html"
+   onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/8_Marianna.jpg"
+         alt="foto">
+        </div>
+
+
+
+<button class="collapsible">Treść</button>
+<div class="content">
+  <ol>
+    <li><a href="#1-id">Edukacja</a></li>
+    <li><a href="#2-id">Doświadczenie</a></li>
+    <li><a href="#3-id">O mnie</a></li>
+  </ol>
+</div>
+
+<script>
+  let coll = document.getElementsByClassName('collapsible');
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  }
+</script>
+
+<h2 id="1-id">Edukacja</h2>
+
+<ul>
+  <li class="text">Uniwersytet Narodowy im. Ivana Ogiienki w Kamieńcu Podolskim - Wydział Nauk Przyrodniczych (2011-2015)</li><p></p>
+  <li class="text">Dodatkowe kursy i staże dotyczące legalizacji dla specjalistów z Warszawy (2017-2022)</li><p></p>
+</ul>
+
+<h2 id="2-id">Doświadczenie</h2>
+
+<ul>
+  <li class="text">Doświadczenie w branży - 5 lat</li><p></p>
+</ul>
+<br>
+<h2 id="3-id">O mnie</h2>
+<p><strong>Legalizacja dla mnie</strong> - to już nie tylko praca, to już styl życia</p>
+<p><strong>Gdybym nie była specjalistą od legalizacji</strong> - byłabym nauczycielką (edukacja zobowiązuje)</p>
+<p><strong>Motto mojego życia:</strong> Żyjesz swoimi czynami, nie swoim ciałem!</p>
+<p><strong>Chciałabym,</strong> aby jutro obudzić się i zobaczyć Ukrainę już zwycięską</p>
+<p><strong>W wolnym czasie</strong> uczę się - to moje główne hobby: od historii religii po blogowanie, świat jest zbyt interesujący, aby skupiać się tylko na jednej rzeczy:) Poświęcam też dużo czasu na wolontariat i sport</p>
+<p><strong>Książka, do której wracam</strong> - "Dzwonnik z Notre-Dame" Victora Hugo - ta książka zainspirowała mnie do odwiedzenia Paryża</p>
+<p><strong>W innych ludziach cenię sobie</strong> szczerość (chciałbym spotykać ją częściej w ludziach)</p>
+<p><strong>Moja supermoc</strong> - wytrwałość i empatia</p>
+<p><strong>Na bezludną wyspę</strong> zabrałbym moją dużą rodzinę: 3 młodszych braci, 3 młodsze siostry, mamę - bez nich moje życie traci sens</p>
+</div>
+
+<div id="back_to_top" class="back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+  $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+  });
+
+  $(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+      $('.back-to-top').addClass('active');
+    } else {
+      $('.back-to-top').removeClass('active');
+    }
+  });
+</script>
+
+    </body>
+</html>
+

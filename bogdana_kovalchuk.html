@@ -1,0 +1,190 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="bogdana_kovalchuk.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="materials.html">Матеріали</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="materials.html">Матеріали</a>
+        <a href="news.html">Новини</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="bogdana_kovalchuk.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="bogdana_kovalchuk.en.html"
+   onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+      <!-- <div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/.jpg"
+         alt="foto">
+        </div>
+
+
+
+
+
+     <button class="collapsible">Зміст</button>
+    <div class="content">
+      <ol>
+          <li><a href="#1-id">Освіта</a></li>
+          <li><a href="#2-id">Досвід</a></li>
+          <li><a href="#3-id">Про мене</a></li>
+
+        </ol>
+    </div>
+
+ <script>
+            let coll = document.getElementsByClassName('collapsible');
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px'
+                             }
+                        })
+            }
+        </script>
+
+<h2 id="1-id">Освіта</h2>
+
+ <ul>
+     <li class="text">Akademia WSEI w  Lublinie - психолог (студентка з 2020 р.)
+</li><p></p>
+
+        </ul>
+
+<h2 id="2-id">Досвід</h2>
+
+        <ul>
+     <li class="text">2 роки викладання на курсах іноземних мов (з 2022)
+
+        </ul>
+<br>
+        <h2 id="3-id">Про мене</h2>
+
+    <li class="text">Люблю людей, адже вони мене надихають</li><p></p>
+    <li class="text">З радістю проводжу заняття та ділюся власним досвідом проживання в іншій країні</li><p></p>
+        <p><strong>Іноземна мова для мене</strong> -  можливість подолати кордони, пізнавати світ</p>
+        <p><strong>Якби не була вчителем </strong>- я різностороння особистість, цікавлюсь психологією і мистецтвом - була б психологом</p>
+        <p><strong>Моє життєве кредо:</strong>  «Carpe diem, quam minimum credula postero» — Лови момент, якомога менше довіряючи майбутньому</p>
+        <p><strong>Хотіла б, щоб</strong> кожна людина була щасливою, аби не було воєн, всі жили в мирі та злагоді зі світом</p>
+        <p><strong>На дозвіллі</strong> люблю читати книги, намагаюся не витрачати жодної хвилини і черпати розвиток з різних джерел
+</p>
+        <p><strong>Книга, до котрої повертаюся </strong>-  «Солодка Даруся» Марія Матіос </p>
+        <p><strong>В інших людях ціную</strong> щирість</p>
+        <p><strong>Моя суперсила </strong>-  знаходити прекрасне в деталях
+</p>
+        <p><strong>На безлюдний острів </strong> книги для читання і матеріали для розпалювання багаття</p>
+</div>
+
+
+
+
+
+
+    <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+    </body>
+</html>

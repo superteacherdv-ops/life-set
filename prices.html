@@ -1,0 +1,175 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="prices.css"!>
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="questions.html">Запитання</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+              <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="questions.html">Запитання</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="prices.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="prices.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+      <!-- <div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+<div class="all_info">
+
+<h2>Формати та вартість навчання</h2>
+    <h3>Індивідуальні заняття</h3>
+
+<p><strong>На занятті</strong> – лише Ви і ментор</p>
+<p><strong>Тривалість </strong>– 60 хвилин (1 година)</p>
+<p>8 занять/міс (2 заняття на тиждень)</p>
+    <h4>Вартість:</h4>
+    <p><u>План мінімум:</u></p>
+    <p> <strong>560 zł</strong> за 8 занять (1 заняття = 70 zł) </p>
+    <p><u>План вигідний:</u></p>
+    <p><strong>1380 zł</strong> за 24 заняття (1 заняття = 57,50 zł)</p>
+    <h3>Парні заняття</h3>
+    <p>Навчаєтеся з людиною, яка має подібні цілі й такий же рівень знань мови.</p>
+    <p><strong>Тривалість</strong> – 60 хвилин (1 година)</p>
+    <p>8 занять/міс (2 заняття на тиждень)</p>
+    <h4>Вартість: </h4>
+    <p><strong>320 zł</strong> (1 заняття = 40 zł)</p>
+    <p>Можете навчатися разом з другом/подругою та отримати <strong> знижку 10% </strong>кожен! </p>
+    <h3>Групові заняття</h3>
+    <p>Групи <strong>4-6 осіб</strong> з одним рівнем мови</p>
+    <p><strong>Зручні години</strong> - обираєте разом з вчителем всередині групи</p>
+    <p><strong>Тривалість </strong>-  60 хвилин (1 година)</p>
+    <p>8 занять/міс (2 заняття на тиждень)</p>
+    <h4>Вартість: </h4>
+    <p><strong>160 zł </strong>(1 заняття = 40 zł)</p>
+    <h2>Додаткові послуги</h2>
+    <h3>Консультації психолога</h3>
+    <li>Відчуття вигорання, стрес, виснаженість</li>
+    <li>Тривожність, страхи</li>
+    <li>Низька самооцінка, невпевненість в собі</li>
+    <li>Пошук себе, розвиток, самореалізація</li>
+    <li>Відбудова особистих кордонів</li>
+    <li>Складні стосунки в сім‘ї</li>
+    <li>Дослідження та прийняття себе</li>
+    <br>
+    <p>Перша ознайомча консультація - <strong>70 zł (-50%)</strong></p>
+    <p>Пакет з 5 консультацій -  <strong> 700 zł </strong>(140 zł за консультацію, можна оплачувати кожну зустріч окремо)</p>
+    <h3>Консультації з легалізації</h3>
+    <li>Карта побиту (повний супровід) </li>
+    <li>Віза в Польщу (без присутності, тільки для громадян України) </li>
+    <li>Черга в паспортний сервіс </li>
+    <li>Консульський облік</li>
+    <li>Страховка (для карти побиту)</li>
+    <li>Водійське посвідчення (заміна на постійне, заміна на польське)</li>
+    <li>Реєстрація автомобіля</li>
+    <li>Віза до США</li>
+    <p>Консультації в рамках супроводу на карту та візу <strong>безкоштовно.</strong></p>
+
+ <div class="link">
+    <p>Якщо Вас цікавлять послуги психолога чи питання легалізації - залиште, будь ласка, заявку за посиланням нижче
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLScn3kKsMj1CkiDzOVLQKZFc1QJzdoMYs8vLp_V6K_CzziVqsQ/viewform?usp=sf_link"
+    target="_blank">Заявка</a>
+</div>
+    </div>
+
+
+
+   <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+</body>
+
+</html>

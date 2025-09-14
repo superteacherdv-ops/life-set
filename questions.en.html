@@ -1,0 +1,134 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="questions.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">home</a></li>
+            <li><a href="about.en.html">about</a></li>
+            <li><a href="specialists.en.html">specialists</a></li>
+            <li><a href="prices.en.html">Prices</a></li>
+            <li><a href="contacts.en.html">contacts</a></li>
+         </ul>
+      </nav>
+              <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">Home</a>
+        <a href="about.en.html">About</a>
+        <a href="specialists.en.html">Specialists</a>
+        <a href="prices.en.html">Prices</a>
+        <a href="contacts.en.html">Contacts</a>
+
+    </nav>
+    </div>
+
+ <div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="questions.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="questions.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+    <div class="all_info">
+<h2>Frequently asked questions</h2>
+    <div class="questions">
+      <ol>
+          <li><a href="#1-id">Why online courses?</a></li>
+          <li><a href="#2-id">What is needed to study the courses?</a></li>
+          <li><a href="#3-id">Teachers: who are they? How many people will I have classes with?</a></li>
+          <li><a href="#4-id">Who should I inform about my absence from classes?</a></li>
+          <li><a href="#5-id">How and when do I have to pay for the course?</a></li>
+        </ol>
+    </div>
+
+<h3 id="1-id">Why online courses?</h3>
+<p>Our students appreciate our commitment, professionalism, flexibility and an atmosphere conducive to learning. We offer classes in pleasant company, at home, over a cup of coffee or tea, in the comfort of your own home and outside working hours. This saves you time and money that would otherwise have to be spent on the road.</p>
+
+<h3 id="2-id">What is needed to study the courses?</h3>
+    <p>Anyone can learn on our courses. All you need is a computer, laptop or tablet with Internet access, headphones with a microphone and... a sincere desire! And of course, write to us so that we can communicate with you and choose a course and a mentor depending on your level and your needs.
+</p>
+
+<h3 id="3-id">Teachers: who are they? How many people will I have classes with? </h3>
+<p>All our teachers are graduates or students of Ukrainian, Polish or foreign universities in fields related to the foreign language they teach. However, they are not only teachers, but also people with their own worldview and many passions. Therefore, learning languages is also about exchanging experiences and broadening horizons.
+
+When you start learning Life-Set courses, you will be assigned to one teacher - a mentor. This is the person who will conduct your classes on an ongoing basis, answer your questions and provide recommendations.</p>
+
+<h3 id="4-id">Who should I inform about my absence from classes?
+</h3>
+<p>Any absence should be reported to the administrator by e-mail or in writing by telegram no later than 24 hours before the start of classes (exception - illness). In this case, the mentor will send you course materials and provide recommendations.
+
+It is not possible to cancel the course with a refund. Absence from classes does not constitute grounds for a refund.
+
+It is possible to postpone a lesson in the form of individual classes, provided that the client reports it in advance (at least 24 hours before the start of the lesson to be postponed), and the teacher has the opportunity to propose an option for another lesson.</p>
+
+<h3 id="5-id">How and when do I have to pay for the course?
+</h3>
+    <p>Payment for language courses at Life-Set is made according to the initial payment system, i.e. prepayment for a month in advance. Why so? Because it disciplines and increases motivation to attend classes. Payment should be made no later than 3 days before the planned start of classes, so that we can register the payment in the system the day before and inform the instructor about the start of the training. Payment can be made in two ways: by transferring a specified amount to a bank account or by payment or credit card using PayPal.
+</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="kucher_dmytro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">home</a></li>
+            <li><a href="about.en.html">about</a></li>
+            <li><a href="specialists.en.html">specialists</a></li>
+            <li><a href="materials.en.html">materials</a></li>
+            <li><a href="news.en.html">news</a></li>
+            <li><a href="contacts.en.html">contacts</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">Home</a>
+        <a href="about.en.html">About</a>
+        <a href="specialists.en.html">Specialists</a>
+        <a href="materials.en.html">Materials</a>
+        <a href="news.en.html">News</a>
+        <a href="contacts.en.html">Contacts</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="kucher_dmytro.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="kucher_dmytro.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/2_Dmytro.jpg"
+         alt="foto">
+        </div>
+
+
+
+
+<div class="container">
+    <ul class="social">
+        <a href="https://www.facebook.com/superteacherdv"
+           target="_blank">
+            <li class="social__item facebook">
+                <i class="fab fa-facebook-f">
+         </i></li></a>
+
+        <a href="https://www.instagram.com/d.s.set/"
+           target="_blank">
+        <li class="social__item instagram">
+            <i class="fab fa-instagram">
+        </i></li></a>
+
+        <a href="https://web.telegram.org/k/#@Superteacherdv"
+           target="_blank">
+            <li class="social__item telegram">
+                <i class="fab fa-telegram">
+
+                </i></li></a>
+    </ul>
+    </div>
+
+<button class="collapsible">Content</button>
+    <div class="content">
+      <ol>
+          <li><a href="#1-id">Who am I?</a></li>
+          <li><a href="#2-id">Why me?</a></li>
+          <li><a href="#3-id">How can I help you?</a></li>
+          <li><a href="#4-id">Services</a></li>
+          <li><a href="#5-id">Teaching methodology</a></li>
+          <li><a href="#6-id">Teaching and levels</a></li>
+          <li><a href="#7-id">Educational materials</a></li>
+        </ol>
+    </div>
+
+ <script>
+            let coll = document.getElementsByClassName('collapsible');
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px'
+                             }
+                        })
+            }
+        </script>
+
+<div class="a lot of text">
+
+<h2 id="1-id">Who am I?</h2>
+
+            <p>Dmytro Kucher is a teacher of foreign languages with more than 10 years of experience. Offline and online English, German, Polish lessons!</p>
+<h2 id="2-id">Why me?</h2>
+
+        <ul>
+     <li class="text">I graduated from one of the best universities of Ukraine with master's degree (English philology, English and German), diploma with distinction.</li><p></p>
+
+    <li class="text">Passed courses/trainings on teaching general English, German, exam preparation, new and non-standard methods of teaching languages, courses in history and culture of England, Germany, Poland.</li><p></p>
+
+    <li class="text">I have been working in public schools, teaching language courses, in various companies and organizations, such as Goodzon, Work and Travel, Skyeng, Vipol, Organization of Poles “Polonia”.</li><p></p>
+
+    <li class="text">My former students and pupils have been working in Great Britain, USA, Canada, Turkey, Ukraine, Slovakia and Poland.</li><p></p>
+
+    <li class="text">I worked as an interpreter for bookmakers in Great Britain.</li><p></p>
+
+    <li class="text">Was an interpreter in marriage agencies, helped Ukrainians move to the USA and Canada.</li><p></p>
+
+    <li class="text">Prepared more than 100 students for interviews at the embassy and for work in the USA.</li><p></p>
+
+    <li class="text">I taught foreign languages for various positions in various spheres of life.
+    </li><p></p>
+
+    <li class="text">Worked in employment agencies. 2020-2021 taught English to students of different nationalities (Poles, Ukrainians, Moldovans, Egyptians, Indians, Americans) at Cosinus evening school (Poland, Warsaw)</li><p></p>
+
+    <li class="text">I have been working in a public school in Warsaw.</li><p></p>
+
+    <li class="text">I teach according to my own methodology online, applying special teaching principles based on the psychological characteristics of students.</li><p></p>
+    </ul>
+
+<h2 id="3-id">How can I help you?</h2>
+        <ul>
+
+        <li class="text">Group and individual lessons (offline and online).
+         </li><p></p>
+
+         <li class="text">Lessons for corporations and firms.
+         </li><p></p>
+
+         <li class="text">Speaking clubs with native speakers.
+         </li><p></p>
+
+         <li class="text">Training for different certificates exams.
+         </li><p></p>
+
+         <li class="text">Translation services.
+         </li><p></p>
+
+         <li class="text">Trainings for interviews and language tests for employment abroad.
+         </li><p></p>
+
+         <li class="text">Compiling documents for to embassies interviews.
+         </li><p></p>
+
+         <li class="text">Courses to start education abroad.
+         </li><p></p>
+
+         <li class="text">Courses for children of primary and secondary schools: classes with children are aimed not only at learning new material, but also at the development of logic, critical thinking and memory, formation of leadership qualities and professional orientation.</li><p></p>
+
+     </ul>
+
+    <h2 id="4-id">Services</h2>
+        <ul>
+         <li class="text">Course of English.
+         </li><p></p>
+
+         <li class="text">Course of German.
+         </li><p></p>
+
+         <li class="text">Course of  Polish.
+         </li><p></p>
+
+         <li class="text">Assistance in employment.
+         </li><p></p>
+
+         <li class="text">Help with adaptation in Poland (registration of a child at school, help to start proper learning at school, excursions to historical places).
+         </li><p></p>
+
+         <li class="text">Preparation for language proficiency exams.
+         </li><p></p>
+
+    </ul>
+
+<h2 id="5-id">Teaching methodology</h2>
+
+            <p>Communicative technique in combination with author's methods to achieve maximum effect. The technique allows both train automatic usage of grammar and vocabulary, and to understand the mentality of native speakers. Classes are held taking into account the individual psycho-physical characteristics and capabilities of students, taking into account age and health. The groups are designed for students of different levels and ages. The selection of courses, the number of classes and their duration depend on the goals, abilities and financial situation of the students.</p>
+
+<h2 id="6-id">Teaching and levels</h2>
+
+    <p>The training course consists of 6 levels in accordance with European requirements:</p>
+   <ul>
+       <li> A1 Beginner The student understands and uses basic everyday words and expressions (greetings, introductions, family, professions, etc.). Understands people who speak clearly and slowly on certain topics. </li><p></p>
+
+       <li>A2 Elementary (elementary) The student can provide information about himself, tell about hobbies, navigate the territory, ask for necessary information. </li><p></p>
+
+       <li> B1 Intermediate The student can communicate on topics such as studies, free time, hobbies, can make contact and talk on most topics related to traveling abroad and related situations, can talk freely about himself without a noticeable lack of funds for this, he can describe his experiences, dreams, plans, briefly give arguments for and against. </li><p></p>
+
+       <li> B2 Upper intermediate The student can understand the main idea of a complex text on abstract and concrete topics, including discussions on technical topics. Free communication with a native speaker without significant difficulties. Can write a well-thought-out and logically structured text on a topic. </li><p></p>
+
+       <li>C1 Advanced The student can understand the implicit points of the content of the text. Uses the necessary linking words to connect the components of a sentence. </li><p></p>
+
+       <li> C2 Mastery or proficiency (Very advanced) The student can understand almost everything he reads or hears, can express himself spontaneously and quickly, distinguishing shades of meaning of phrases and expressions.</li><p></p>
+
+
+       Time of learning depends on different levels. All this is discussed with the teacher individually. Early transfer to a higher level is possible, as well as being on same levels in cases if, for example, a student fails a test or an exam.
+       </ul>
+
+<h2 id="7-id">Educational materials</h2>
+
+    <p>Textbooks of foreign publishers (Oxford, MacMillan, Pearson, Hueber), own developments to accelerate learning or correct academic performance. Educational and feature films, music, educational games.</p> <p>.</p><p>.</p>
+     <p>.</p><p>.</p>  <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p>
+
+<p>How useful was the post?</p>
+    </div>
+<p>Нclick on the stars to rate! (Soon...)</p>
+
+
+
+
+
+
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+    </div>
+    </body>
+</html>

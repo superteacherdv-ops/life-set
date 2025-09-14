@@ -1,0 +1,335 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="specialists.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+      <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.pl.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.pl.html">Głowna</a></li>
+            <li><a href="about.pl.html">O nas</a></li>
+            <li><a href="questions.pl.html">Pytania</a></li>
+            <li><a href="prices.pl.html">Ceny</a></li>
+            <li><a href="contacts.pl.html">Kontakty</a></li>
+         </ul>
+      </nav>
+
+
+
+<div class="wrapper_login">
+       <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.pl.html">Główna</a>
+        <a href="about.pl.html">O nas</a>
+        <a href="questions.pl.html">Pytania</a>
+        <a href="prices.pl.html">Ceny</a>
+        <a href="contacts.pl.html">Kontakty</a>
+
+    </nav>
+    </div>
+
+      <div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/poland.png">PL</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="specialists.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="specialists.en.html"
+   onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+<!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+    </div>
+    </div>
+
+
+
+
+<h1>Specjaliści</h1>
+
+<div class="start">
+<h3><u>Life-Set</u> - to zespół profesjonalistów. Jesteśmy pewni tego, co robimy. Jesteśmy otwarci na współpracę. Dla nas ważne jest indywidualne podejście, szacunek dla siebie nawzajem, naszych studentów i klientów, umiejętność wysłuchania, usłyszenia i uwzględnienia wszystkich życzeń, wsparcie i udzielenie porady.
+</h3>
+    <br>
+<u>Wartości naszego zespołu:</u>
+
+    <li>Profesjonalizm.</li>
+    <li>Orientacja na klienta.</li>
+    <li>Zaufanie.</li>
+    <li>Kreatywność.</li>
+    <li>Efektywność i motywacja.</li>
+    <li>Ciągły postęp.</li>
+</div>
+
+
+
+<div class="dmytro_ludmila">
+    <div class="kucher_dmytro">
+        <div class="left-part">
+            <img src="images/Dmytro.jpg"
+                 alt="folo">
+            <p></p>  <a href="kucher_dmytro.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="kucher_dmytro.pl.html"> <h2>Dmytro </h2> </a>
+                <ul>Współzałożyciel projektu Life-Set, metodyk.
+                    <p></p>
+                    <p>Nauczyciel języka angielskiego, niemieckiego, polskiego.</p>
+                    <p>Doświadczenie: 16 lat.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="ternovska_ludmila">
+        <div class="left-part">
+             <img src="images/Ludmyla.jpg"
+                  alt="folo">
+             <p></p>  <a href="ternovska_ludmila.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="ternovska_ludmila.pl.html"> <h2>Ludmiła </h2> </a>
+                <ol> Współzałożycielka projektu Life-Set, dyrektor kreatywny.
+                    <p>Nauczyciel języka francuskiego, angielskiego, polskiego.</p>
+                    <p>Doświadczenie: 17 lat.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--_________________________________________________________-->
+
+    <div class="valentyna_anastasia">
+    <div class="valentyna_viktiuk">
+        <div class="left-part">
+            <img src="images/Valentyna.jpg"
+                 alt="folo">
+            <p></p>  <a href="valentyna_viktiuk.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="valentyna_viktiuk.pl.html"> <h2>Walentyna </h2> </a>
+                <ul> Nauczyciel, mentor języka angielskiego, niemieckiego.
+                    <p></p>
+                    <p>Doświadczenie: 16 lat.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="anastasia_chykirda">
+        <div class="left-part">
+             <img src="images/Anastasia.jpg"
+                  alt="folo">
+             <p></p>  <a href="anastasia_chykirda.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="anastasia_chykirda.pl.html"> <h2>Anastazja </h2> </a>
+                <ol> Mentor języka polskiego.
+                    <p>Doświadczenie: 2 lata.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+        <div class="berivan_olga">
+    <div class="berivan_ildiz">
+        <div class="left-part">
+            <img src="images/Berivan.jpg"
+                 alt="folo">
+            <p></p>  <a href="berivan_ildiz.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="berivan_ildiz.pl.html"> <h2>Berivan </h2> </a>
+                <ul>Mentor języka angielskiego, lider klubu rozmów.
+                    <p></p>
+                    <p>Doświadczenie: 8 lat.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="olga_kravets">
+        <div class="left-part">
+             <img src="images/Olga.jpg"
+                  alt="folo">
+             <p></p>  <a href="olga_kravets.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="olga_kravets.pl.html"> <h2>Ola </h2> </a>
+                <ol> Nauczyciel, mentor języka francuskiego, angielskiego.
+                    <p>Doświadczenie: 13 lat.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+
+            <div class="bogdana_jacek">
+    <div class="bogdana_kovalchuk">
+        <div class="left-part">
+            <img src="images/Bogdana.jpg"
+                 alt="folo">
+            <p></p>  <a href="bogdana_kovalchuk.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="bogdana_kovalchuk.pl.html"> <h2>Bogdana </h2> </a>
+                <ul>Mentor języka polskiego.
+                    <p></p>
+                    <p>Doświadczenie: 2 lata.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+<div class="jacek_chaladaj">
+    <div class="left-part">
+         <img src="images/Jacek.jpg"
+              alt="folo">
+         <p></p>  <a href="jacek_chaladaj.pl.html">Dowiedz się więcej</a>
+    </div>
+
+    <div class="right-part">
+        <a href="jacek_chaladaj.pl.html"> <h2>Jacek </h2> </a>
+            <ul> Mówca ojczysty, lider klubu rozmów w języku polskim.                                    <p>Doświadczenie: 2 lata.</p>
+
+        </ul>
+    </div>
+</div>
+    </div>
+<div class="marianna_fatime">
+    <div class="marianna">
+        <div class="left-part">
+            <img src="images/Marianna.jpg"
+                 alt="folo">
+            <p></p>  <a href="marianna.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="marianna.pl.html"> <h2>Marianna </h2> </a>
+                <ul> Ekspert w dziedzinie legalizacji.
+                    <p>Doświadczenie w tej dziedzinie: 5 lat.</p>
+
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+     <div class="fatime_abel">
+        <div class="left-part">
+             <img src="images/Fatime.jpg"
+                  alt="folo">
+             <p></p>  <a href="fatime_abel.pl.html">Dowiedz się więcej</a>
+        </div>
+
+        <div class="right-part">
+            <a href="fatime_abel.pl.html"> <h2>Fatime </h2> </a>
+                <ol> Psycholog.
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------------------------------------------------------------------->
+<br><br><br><br><br><br>
+    <h2>Dołączyć do drużyny</h2>
+<div class="link">
+    <p>Jeśli nasze wartości są Ci bliskie, wypełnij ankietę i dołącz do naszego zespołu podobnie myślących ludzi!
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSdt8UKBsxthpBsgq-HFLH14dNCYrwGrlyOl2SZdphAE-slpyg/viewform?usp=sf_link"
+    target="_blank">Link</a>
+</div>
+
+
+ <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+</body>
+
+</html>

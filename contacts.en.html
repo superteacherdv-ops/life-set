@@ -1,0 +1,187 @@
+ <html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="contacts.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">home</a></li>
+            <li><a href="about.en.html">about</a></li>
+            <li><a href="specialists.en.html">specialists</a></li>
+            <li><a href="questions.en.html">Questions</a></li>
+            <li><a href="prices.en.html">Prices</a></li>
+         </ul>
+      </nav>
+
+
+
+<div class="wrapper_login">
+       <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">Home</a>
+        <a href="about.en.html">About</a>
+        <a href="specialists.en.html">Specialists</a>
+        <a href="questions.en.html">Questions</a>
+        <a href="prices.en.html">Prices</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="contacts.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="contacts.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+<!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+    </div>
+    </div>
+
+<h1>Contacts</h1>
+
+    <div class="container">
+    <ul class="social">
+        <a href="#"
+           target="_blank">
+            <li class="social__item facebook">
+                <i class="fab fa-facebook-f">
+         </i></li></a>
+
+        <a href="https://www.instagram.com/life_set_online/"
+           target="_blank">
+        <li class="social__item instagram">
+            <i class="fab fa-instagram">
+        </i></li></a>
+
+        <a href="#"
+           target="_blank">
+            <li class="social__item telegram">
+                <i class="fab fa-telegram">
+
+                </i></li></a>
+
+        <a href="#"
+           target="_blank">
+            <li class="social__item youtube">
+                <i class="fab fa-youtube">
+
+                </i></li></a>
+         <a href="https://www.tiktok.com/@life_set_online?_t=8jxPgESw9Nw"
+           target="_blank">
+            <li class="social__item tiktok">
+                <i class="fab fa-tiktok">
+
+                </i></li></a>
+    </ul>
+    </div>
+
+<div class="all_info">
+    <div class="dmytro_ludmila">
+    <div class="kucher_dmytro">
+
+           <h2><a href="kucher_dmytro.en.html"> Dmytro</a></h2>
+        <p>Phone number: <a href="tel:+48732882047">+48-732-882-047</a></p>
+        <p>Email:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=life-set@gmail.com"
+               target="_blank">
+               LifeSet@gmail.com</a></p>
+        <p></p>
+        <div class="lear_more"><a href="kucher_dmytro.en.html">Learn more</a>
+        </div>
+    </div>
+
+    <div class="ternovska_ludmila">
+        <h2><a href="ternovska_ludmila.en.html"> Ludmila</a></h2>
+        <p>Phone number: <a href="tel:">+48-731-081-598</a></p>
+        <p>Email:
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=life-set@gmail.com"
+               target="_blank">
+               LifeSet@gmail.com</a></p>
+        <p></p>
+       <div class="lear_more"> <a href="ternovska_ludmila.en.html">Learn more</a>
+    </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+</body>
+
+</html>

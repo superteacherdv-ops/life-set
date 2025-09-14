@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="fatime_abel.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">home</a></li>
+            <li><a href="about.en.html">about</a></li>
+            <li><a href="specialists.en.html">specialists</a></li>
+            <li><a href="materials.en.html">materials</a></li>
+            <li><a href="news.en.html">news</a></li>
+            <li><a href="contacts.en.html">contacts</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">Home</a>
+        <a href="about.en.html">About</a>
+        <a href="specialists.en.html">Specialists</a>
+        <a href="materials.en.html">Materials</a>
+        <a href="news.en.html">News</a>
+        <a href="contacts.en.html">Contacts</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="fatime_abel.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="fatime_abel.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/9_Fatime.jpg"
+         alt="foto">
+        </div>
+
+
+
+<button class="collapsible">Content</button>
+<div class="content">
+  <ol>
+    <li><a href="#1-id">Education</a></li>
+    <li><a href="#2-id">Experience</a></li>
+    <li><a href="#3-id">About Me</a></li>
+  </ol>
+</div>
+
+<script>
+  let coll = document.getElementsByClassName('collapsible');
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  }
+</script>
+
+<h2 id="1-id">Education</h2>
+
+<ul>
+  <li class="text">Ivan Franko National University of Lviv</li><p></p>
+  <li class="text">Lviv State University of Life Safety - practical psychologist</li><p></p>
+  <li class="text">Lviv Psychoanalytic Institute of Mental Health - psychoanalyst therapist (in training)</li><p></p>
+</ul>
+
+<h2 id="2-id">Experience</h2>
+
+    <li class="text">Telephone counseling section of the Ukrainian Union of Psychotherapists - consultant psychologist</li><p></p>
+<h2 id="3-id">About Me</h2>
+<p><strong>Psychology for me</strong> - is a tool and an opportunity to make life better, regardless of what happened before. By having an interest in understanding myself, we explore the world and ourselves in it in a unique way</p>
+<p><strong>If I weren't a psychologist</strong> - I would work as an event organizer or be involved in organizing things and space. For me, the ability to organize chaos is an art. But only for those who don't feel comfortable in chaos</p>
+<p><strong>My life motto:</strong> If you want to change the world, start with yourself</p>
+<p><strong>I wish</strong> it was the last war (even for a hundred years) and that it would end quickly</p>
+<p><strong>In my free time</strong> I cook, I like to walk around the city in the evenings and watch series</p>
+<p><strong>The book I return to</strong> - "The Book of Joy" by Dalai Lama and Desmond Tutu</p>
+<p><strong>In other people, I value</strong> the ability to be open to the world, respect dignity, and allow oneself to be vulnerable</p>
+<p><strong>My superpower</strong> is organizing chaos on shelves with labeled sections</p>
+<p><strong>To a deserted island</strong> I would take my music library and a notebook</p>
+</div>
+
+<div id="back_to_top" class="back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+  $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+  });
+
+  $(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+      $('.back-to-top').addClass('active');
+    } else {
+      $('.back-to-top').removeClass('active');
+    }
+  });
+</script>
+
+    </body>
+</html>
+

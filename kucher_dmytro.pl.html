@@ -1,0 +1,312 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="kucher_dmytro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.pl.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.pl.html">główna</a></li>
+            <li><a href="about.pl.html">o nas</a></li>
+            <li><a href="specialists.pl.html">specjaliści</a></li>
+            <li><a href="materials.pl.html">materiały</a></li>
+            <li><a href="news.pl.html">Aktualności</a></li>
+            <li><a href="contacts.pl.html">Kontakty</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.pl.html">Główna</a>
+        <a href="about.pl.html">O nas</a>
+        <a href="specialists.pl.html">Specjaliści</a>
+        <a href="materials.pl.html">Materiały</a>
+        <a href="news.pl.html">Aktualności</a>
+        <a href="contacts.pl.html">Kontakty</a>
+
+    </nav>
+    </div>
+
+      <div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/poland.png">PL</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="kucher_dmytro.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="kucher_dmytro.en.html"
+   onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/2_Dmytro.jpg"
+         alt="foto">
+        </div>
+
+
+
+
+<div class="container">
+    <ul class="social">
+        <a href="https://www.facebook.com/superteacherdv"
+           target="_blank">
+            <li class="social__item facebook">
+                <i class="fab fa-facebook-f">
+         </i></li></a>
+
+        <a href="https://www.instagram.com/d.s.set/"
+           target="_blank">
+        <li class="social__item instagram">
+            <i class="fab fa-instagram">
+        </i></li></a>
+
+        <a href="https://web.telegram.org/k/#@Superteacherdv"
+           target="_blank">
+            <li class="social__item telegram">
+                <i class="fab fa-telegram">
+
+                </i></li></a>
+    </ul>
+    </div>
+
+<button class="collapsible">Treść</button>
+    <div class="content">
+      <ol>
+          <li><a href="#1-id">Kim jestem?</a></li>
+          <li><a href="#2-id">Dlaczego ze mną?</a></li>
+          <li><a href="#3-id">Jak mogę się przydać?</a></li>
+          <li><a href="#4-id">Usługi</a></li>
+          <li><a href="#5-id">Metodologia nauczania</a></li>
+          <li><a href="#6-id">Program</a></li>
+          <li><a href="#7-id">Materiały edukacyjne</a></li>
+        </ol>
+    </div>
+
+ <script>
+            let coll = document.getElementsByClassName('collapsible');
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px'
+                             }
+                        })
+            }
+        </script>
+
+<div class="a lot of text">
+
+<h2 id="1-id">Kim jestem?</h2>
+
+            <p>jestem Dmytro Kucher, nauczycielem języków obcych z ponad 10-letnim doświadczeniem. Zajęcia offline i online z języka angielskiego, niemieckiego, polskiego!</p>
+<h2 id="2-id">Dlaczego ze mną?</h2>
+
+        <ul>
+     <li class="text">Ukończył z wyróżnieniem Zaporoski Uniwersytet Państwowy, uzyskał tytuł magistra (filologia angielska, angielska i niemiecka), dyplom z wyróżnieniem.</li><p></p>
+
+    <li class="text">Ukończone kursy/szkolenia z nauczania ogólnego języka angielskiego, niemieckiego, przygotowania do egzaminów, nowych i niestandardowych metod nauczania języków, kursy z historii i kultury Anglii, Niemiec, Polski.</li><p></p>
+
+    <li class="text">Pracował w szkołach publicznych, prowadził kursy językowe, w różnych firmach i organizacjach, np. Goodzon, Work and Travel, Skyeng, Vipol, Związek Polaków „Polonia”.</li><p></p>
+
+    <li class="text">Moi studenci i praktykanci pracują obecnie w Wielkiej Brytanii, USA, Kanadzie, Turcji, Ukrainie.</li><p></p>
+
+    <li class="text">Świadczyłem usługi tłumaczeniowe dla bukmacherów w Wielkiej Brytanii.</li><p></p>
+
+    <li class="text">Pracowałem jako tłumacz w agencjach, doradzałem w poszukiwaniu  pracy i szkół w USA i Kanady.</li><p></p>
+
+    <li class="text">Przygotowałem ponad 100 studentów do rozmów kwalifikacyjnych w ambasadzie i do pracy w USA.</li><p></p>
+
+    <li class="text">Na odrębnych kursach uczyłem języków obcych dla różnych specjalności.
+    </li><p></p>
+
+    <li class="text">Pracowałem w agencjach pracy. 2020-2021 nauczanie języka angielskiego uczniów różnych narodowości (Polacy, Ukraińcy, Mołdawianie, Egipcjanie, Hindusi, Amerykanie) w szkole wieczorowej Cosinus (Polska, Warszawa)</li><p></p>
+
+    <li class="text">Pracuję w szkole podstawowej w Warszawie.</li><p></p>
+
+    <li class="text">Nauczam według własnej metodologii online, stosując specjalne zasady nauczania dostosowując do potrzeb indywidualnych  uczniów/studentów.</li><p></p>
+    </ul>
+
+<h2 id="3-id">Jak mogę się przydać?</h2>
+        <ul>
+
+        <li class="text">Uczę w grupach i indywidualnie (offline i online).
+         </li><p></p>
+
+         <li class="text">Szkolenia dla firm.
+         </li><p></p>
+
+         <li class="text">Speaking kluby z native speakerami.
+         </li><p></p>
+
+         <li class="text">Przygotowanie do zdania egzaminów na certyfikaty.
+         </li><p></p>
+
+         <li class="text">Usługi tłumaczące.
+         </li><p></p>
+
+         <li class="text">Przygotowanie do rozmów kwalifikacyjnych i testów językowych do pracy za granicą.
+         </li><p></p>
+
+         <li class="text">Przygotowanie do złożenia dokumentów w konsulatach.
+         </li><p></p>
+
+         <li class="text">Przygotowanie do studiów za granicą.
+         </li><p></p>
+
+         <li class="text">Kursy dla dzieci szkół ogólnych i wyższych: zajęcia z dziećmi mają na celu nie tylko naukę nowego materiału, ale także rozwój logiki, krytycznego myślenia i uwagi, kształtowanie cech przywódczych i orientacji zawodowej.
+</li><p></p>
+
+     </ul>
+
+    <h2 id="4-id">Usługi</h2>
+        <ul>
+         <li class="text">Kursy angielskiego.
+         </li><p></p>
+
+         <li class="text">Kursy niemieckiego.
+         </li><p></p>
+
+         <li class="text">Kursy języka polskiego dla obcokrajowców.
+         </li><p></p>
+
+         <li class="text">Pomoc prawna w zatrudnieniu.
+         </li><p></p>
+
+         <li class="text">Pomoc w adaptacji w Polsce (zapis dziecka do szkoły, pomoc w nauce, wycieczki do miejsc historycznych).
+         </li><p></p>
+
+         <li class="text">Pomoc w uzyskaniu karty pobytu.
+         </li><p></p>
+
+         <li class="text">Przygotowanie do egzaminów biegłości językowej.
+         </li><p></p>
+
+         <li class="text">Pomoc w otwarciu firmy.
+         </li><p></p>
+    </ul>
+
+<h2 id="5-id">Metodologia nauczania</h2>
+
+            <p>Technika komunikacyjna w połączeniu z autorskimi metodami w celu osiągnięcia maksymalnego efektu. Technika ta pozwala zarówno na automatyzację stosowania wszelkich konstrukcji językowych, jak i na zrozumienie mentalności native speakerów. Zajęcia prowadzone są z uwzględnieniem indywidualnych cech psychofizycznych i możliwości uczniów, z uwzględnieniem wieku i stanu zdrowia. Grupy przeznaczone są dla uczniów na różnym poziomie zaawansowania i w różnym wieku. Dobór kursów, liczbę zajęć i czas ich trwania ustala się w zależności od celów, zdolności i możliwości finansowych studentów.</p>
+
+<h2 id="6-id">Program</h2>
+
+    <p>Szkolenie składa się z 6 poziomów zgodnie z wymogami europejskimi:</p>
+   <ul>
+       <li> A1 Początkujący Uczeń rozumie i używa podstawowych słów i wyrażeń codziennego użytku (powitania, przedstawienie się, rodzina, zawody itp.). Rozumie ludzi, którzy mówią wyraźnie i powoli na określone tematy. </li><p></p>
+
+       <li> A2 Elementarny (podstawowy) Uczeń potrafi udzielić informacji o sobie, opowiedzieć o swoich zainteresowaniach, poruszać się po terenie, poprosić o niezbędne informacje. </li><p></p>
+
+       <li>B1 Średniozaawansowany Student potrafi porozumiewać się na takie tematy jak studia, czas wolny, zainteresowania, potrafi nawiązać kontakt i porozmawiać na większość tematów związanych z wyjazdami za granicę i sytuacjami związanymi z nimi, potrafi swobodnie opowiadać o sobie bez zauważalnego braku środków językowych, potrafi opisać swoje doświadczenia, marzenia, plany, krótko przedstawia argumenty za i przeciw. </li><p></p>
+
+       <li> B2 Średnio zaawansowany student potrafi zrozumieć główną myśl złożonego tekstu na tematy abstrakcyjne i konkretne, w tym dyskusje na tematy techniczne. Swobodna komunikacja z native speakerem bez kompleksów i znaczących trudności. Potrafi napisać przemyślany i logicznie skonstruowany tekst na dany temat. </li><p></p>
+
+       <li>C1 Zaawansowany Student potrafi zrozumieć ukryte punkty treści tekstu. Używa niezbędnych słów łączących, aby połączyć elementy zdania.</li><p></p>
+
+       <li> C2 Mistrzostwo lub biegłość (bardzo zaawansowany) Student rozumie prawie wszystko, co czyta lub słyszy, potrafi wyrażać się spontanicznie i szybko, rozróżniając odcienie znaczeniowe zwrotów i wyrażeń.</li><p></p>
+
+
+     Nauka na różnych poziomach ma różne terminy. Wszystko to jest omawiane indywidualnie z nauczycielem. Możliwe jest wcześniejsze przeniesienie na wyższy poziom, a także zatrzymanie się na określonych poziomach w przypadku, gdy student np. nie zda testu lub egzaminu.
+
+       </ul>
+
+<h2 id="7-id">Materiały edukacyjne</h2>
+
+    <p>Podręczniki wydawców zagranicznych (Oxford, MacMillan, Pearson, Hueber), własne opracowania przyspieszające naukę lub poprawiające wyniki w nauce. Filmy edukacyjne i fabularne, muzyka, gry edukacyjne.</p> <p>.</p><p>.</p>
+     <p>.</p><p>.</p>  <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p>
+
+<p>Jak przydatny był post?</p>
+    </div>
+<p>Kliknij gwiazdki, aby ocenić! (Wkrótce...)</p>
+
+
+
+
+
+
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+    </div>
+    </body>
+</html>

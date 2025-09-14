@@ -1,0 +1,149 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="about.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">Home</a></li>
+            <li><a href="specialists.en.html">Specialists</a></li>
+            <li><a href="questions.en.html">Questions</a></li>
+            <li><a href="prices.en.html">Prices</a></li>
+            <li><a href="contacts.en.html">Contacts</a></li>
+         </ul>
+      </nav>
+              <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">Home</a>
+        <a href="specialists.en.html">Specialists</a>
+        <a href="questions.en.html">Questions</a>
+        <a href="prices.en.html">Prices</a>
+        <a href="contacts.en.html">Contacts</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="about.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="about.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+    <div class="all_info">
+<h1>The online language project Life-Set is a place where professionalism meets modernity
+</h1>
+
+    <h2>Our goal</h2>
+    <p><strong><u>LIFE-SET</u></strong> - these are online language courses including comprehensive learning of Polish, English and French using the most modern methods and conversation clubs run by native speakers. As well as professional psychological support and assistance in legalization matters in Poland.</p>
+    <p><u>We have walked this path ourselves</u> - from moving to another country, finding a job, apartment, language barrier, training, legalization, career development, happiness and failures, to revealing yourself and doing what you like - that's why we understand your every request.</p>
+<p><u>Our goal is to provide you with comprehensive, professional support</u>:</p>
+   <p> <li>pleasant and productive learning of foreign languages;</li>
+    <li>individual consultations taking into account specific requirements, preferences and needs.</li></p>
+<em>We want you to feel at least partially your home, support and comfort in another country.</em>
+<br><br><br>
+    <h2> Who are our courses intended for?</h2>
+<li>For those who want to learn a language for work and are planning to go abroad.</li>
+    <li>Who needs to learn a language: preparation for school, admission to studies, exams.</li>
+    <li>Who wants to get a Pole's card, permanent residence, a Polish resident card.</li>
+    <li>Anyone who likes to develop and understands the value of learning a new language.</li>
+<br><br><br>
+    <h2>Leave the application and receive a selection of an individual training program</h2>
+    <div class="link">
+    <p>If our values are close to you, fill out the survey and join our team of like-minded people!
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLScieWjrhoNzPjJ1Btg6yE8CQOabiQksfyHUxvx3GhGtD_pA9Q/viewform?usp=sf_link
+
+"
+    target="_blank">Link</a>
+</div>
+
+    </div>
+
+
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="about.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+                <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="questions.html">Запитання</a></li>
+            <li><a href="prices.html">Ціни</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+              <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="questions.html">Запитання</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="about.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="about.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+<div class="all_info">
+ <h1>Мовний онлайн проєкт Life-Set - це місце, де професіоналізм зустрічається з сучасністю
+</h1>
+    <br>
+    <h2>Наша мета</h2>
+    <p><strong><u>LIFE-SET</u></strong> - це мовні онлайн курси з комплексним вивченням польської, англійської, французької мов з застосуванням найновіших методик та розмовними клубами від носіїв мов. А також професійна психологічна підтримка та допомога з питань легалізації в Польщі.</p>
+    <p><u>Ми самі пройшли цей шлях</u> - від переїзду в іншу країну, пошуку роботи, житла, мовний бар'єр, навчання, легалізацію, кар'єрне зростання, удачі та падіння до розкриття себе та заняття улюбленою справою, - тому з розумінням ставимося до кожного Вашого запиту.</p>
+<p><u>Наша мета - забезпечити Вам комплексну професійну підтримку</u>:</p>
+   <p> <li>приємне та результативне вивчення іноземних мов;</li>
+    <li>індивідуальні консультації з урахуванням конкретних вимог, уподобання та потреб.</li></p>
+<em>Ми хочемо, щоб Ви хоча б частково відчули рідний дім, підтримку та комфорт в іншій країні.</em>
+<br><br><br>
+    <h2> Кому підійдуть наші курси?</h2>
+<li>Тому, хто хоче вивчити мову для роботи, планує переїзд за кордон.</li>
+    <li>Кому потрібна мова для навчання: підготовка до школи, вступу в університет, екзаменів.</li>
+    <li>Хто хоче отримати карту поляка, сталого побиту, карту резидента в Польщі.</li>
+    <li>Всім, хто любить розвиватися та розуміє для себе цінність вивчення нової мови.</li>
+<br><br><br>
+    <h2>Залиште заявку та отримайте підбір індивідуальної програми навчання</h2>
+    <div class="link">
+    <p>Якщо Вам близькі наші цінності - заповніть анкету та приєднайтеся до нашої команди однодумців!
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLScieWjrhoNzPjJ1Btg6yE8CQOabiQksfyHUxvx3GhGtD_pA9Q/viewform?usp=sf_link
+
+"
+    target="_blank">Заявка</a>
+</div>
+
+    </div>
+
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+</body>
+
+</html>

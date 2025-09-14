@@ -1,0 +1,341 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="specialists.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+      <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="questions.html">Запитання</a></li>
+            <li><a href="prices.html">Ціни</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+
+
+
+<div class="wrapper_login">
+       <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="questions.html">Запитання</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="specialists.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="specialists.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+<!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+    </div>
+    </div>
+
+
+
+
+<h1>Спеціалісти</h1>
+<div class="start">
+<h3><u>Life-Set</u> - це команда професіоналів. Ми впевнені в тому, що ми робимо. Ми відкриті до співпраці. Для нас важливий індивідуальний підхід, повага один до одного, до наших студентів та клієнтів, вміння вислухати, почути та врахувати всі побажання, підтримати та дати пораду.
+</h3>
+    <br>
+<u>Цінності нашої команди:</u>
+
+    <li>Професіоналізм.</li>
+    <li>Орієнтація на клієнта.</li>
+    <li>Довіра.</li>
+    <li>Креативність.</li>
+    <li>Ефективність та мотивація.</li>
+    <li>Постійний рух вперед.</li>
+</div>
+
+
+
+<div class="dmytro_ludmila">
+    <div class="kucher_dmytro">
+        <div class="left-part">
+            <img src="images/Dmytro.jpg"
+                 alt="folo">
+            <p></p>  <a href="kucher_dmytro.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="kucher_dmytro.html"> <h2>Дмитро </h2> </a>
+                <ul>Співзасновник проєкту Life-Set, методист.
+                    <p></p>
+                    <p>Вчитель англійської, німецької, польської мов.</p>
+                    <p>Досвід: 16 років.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="ternovska_ludmila">
+        <div class="left-part">
+             <img src="images/Ludmyla.jpg"
+                  alt="folo">
+             <p></p>  <a href="ternovska_ludmila.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="ternovska_ludmila.html"> <h2>Людмила </h2> </a>
+                <ol> Співзасновниця проєкту Life-Set, креативний директор.
+                    <p>Вчитель французької, англійської, польської мов.</p>
+                    <p>Досвід: 17 років.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--_________________________________________________________-->
+
+    <div class="valentyna_anastasia">
+    <div class="valentyna_viktiuk">
+        <div class="left-part">
+            <img src="images/Valentyna.jpg"
+                 alt="folo">
+            <p></p>  <a href="valentyna_viktiuk.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="valentyna_viktiuk.html"> <h2>Валентина </h2> </a>
+                <ul> Вчитель, ментор англійської, німецької мов.
+                    <p></p>
+                    <p>Досвід: 16 років.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="anastasia_chykirda">
+        <div class="left-part">
+             <img src="images/Anastasia.jpg"
+                  alt="folo">
+             <p></p>  <a href="anastasia_chykirda.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="anastasia_chykirda.html"> <h2>Анастасія </h2> </a>
+                <ol> Ментор польської мови.
+                    <p>Досвід: 2 роки.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+        <div class="berivan_olga">
+    <div class="berivan_ildiz">
+        <div class="left-part">
+            <img src="images/Berivan.jpg"
+                 alt="folo">
+            <p></p>  <a href="berivan_ildiz.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="berivan_ildiz.html"> <h2>Беріван </h2> </a>
+                <ul>Mентор англійської, керівник розмовного клубу.
+                    <p></p>
+                    <p>Досвід: 8 років.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="olga_kravets">
+        <div class="left-part">
+             <img src="images/Olga.jpg"
+                  alt="folo">
+             <p></p>  <a href="olga_kravets.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="olga_kravets.html"> <h2>Ольга </h2> </a>
+                <ol> Вчитель, ментор ментор французької, англійської мов.
+                    <p>Досвід: 13 ріків.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+
+            <div class="bogdana_jacek">
+    <div class="bogdana_kovalchuk">
+        <div class="left-part">
+            <img src="images/Bogdana.jpg"
+                 alt="folo">
+            <p></p>  <a href="bogdana_kovalchuk.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="bogdana_kovalchuk.html"> <h2>Богдана </h2> </a>
+                <ul>Ментор польської мови.
+                    <p></p>
+                    <p>Досвід: 2 роки.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="jacek_chaladaj">
+        <div class="left-part">
+             <img src="images/Jacek.jpg"
+                  alt="folo">
+             <p></p>  <a href="jacek_chaladaj.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="jacek_chaladaj.html"> <h2>Яцек </h2> </a>
+                <ul> нейтів спікер, керівник розмовного клубу польської мови.                                    <p>Досвід: 2 роки.</p>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!----------------------------------------------------------------->
+
+
+
+        <div class="marianna_fatime">
+    <div class="marianna">
+        <div class="left-part">
+            <img src="images/Marianna.jpg"
+                 alt="folo">
+            <p></p>  <a href="marianna.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="marianna.html"> <h2>Маріанна </h2> </a>
+                <ul> Експерт з легалізації.
+                    <p>Досвід в сфері: 5 років.</p>
+
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+     <div class="fatime_abel">
+        <div class="left-part">
+             <img src="images/Fatime.jpg"
+                  alt="folo">
+             <p></p>  <a href="fatime_abel.html">Дізнатися більше</a>
+        </div>
+
+        <div class="right-part">
+            <a href="fatime_abel.html"> <h2>Фатіме </h2> </a>
+                <ol> Психолог.
+            </ol>
+        </div>
+    </div>
+    </div>
+
+
+
+<!--------------------------------------------------------------------->
+<br><br><br><br><br><br>
+    <h2>Приєднайтеся до команди</h2>
+<div class="link">
+    <p>Якщо Вам близькі наші цінності - заповніть анкету та приєднайтеся до нашої команди однодумців!
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSdt8UKBsxthpBsgq-HFLH14dNCYrwGrlyOl2SZdphAE-slpyg/viewform?usp=sf_link
+"
+    target="_blank">Заявка</a>
+</div>
+
+
+
+ <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+</body>
+
+</html>

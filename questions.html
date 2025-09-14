@@ -1,0 +1,157 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="questions.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="prices.html">Ціни</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+              <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="questions.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="questions.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+       <!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+<div class="all_info">
+    <h2>Поширені запитання</h2>
+    <div class="questions">
+      <ol>
+          <li><a href="#1-id">Чому курси онлайн?</a></li>
+          <li><a href="#2-id">Що потрібно для того, щоб навчатися на курсах?</a></li>
+          <li><a href="#3-id">Викладачі: хто вони? З кількома я матиму заняття?</a></li>
+          <li><a href="#4-id">Кому повідомити про мою відсутність на занятті?</a></li>
+          <li><a href="#5-id">Як і коли потрібно оплатити курс?</a></li>
+        </ol>
+    </div>
+
+<h3 id="1-id">Чому курси онлайн?</h3>
+<p>Наші студенти цінують нашу відданість, професіоналізм, гнучкість і атмосферу, яка сприяє навчанню. Ми пропонуємо заняття в приємній компанії вдома з чашкою кави або чаю в домашній тиші та в неробочий час. Завдяки цьому ви заощаджуєте час і гроші, які інакше довелося б витратити на дорогу. </p>
+
+<h3 id="2-id">Що потрібно для того, щоб навчатися на курсах?</h3>
+    <p>Навчатися на наших курсах може кожен. Все, що вам знадобиться – це комп’ютер, ноутбук чи планшет з виходом в Інтернет, навушники з мікрофоном і ... щире бажання! І, звісно, написати нам, щоб ми могли поспілкуватися з Вами та підібрати курс і ментора залежно від Вашого рівня та Ваших потреб.
+</p>
+
+<h3 id="3-id">Викладачі: хто вони? З кількома я матиму заняття? </h3>
+<p>Усі наші викладачі є випускниками чи студентами українських, польських або закордонних університетів у сферах, пов’язаних з іноземною мовою, яку вони викладають. Однак вони не лише вчителі, а й люди зі своїм світоглядом та багатьма пристрастями. Тому вивчення мов - це ще й обмін досвідом та розширення кругозору.
+
+<br>Коли Ви починаєте навчання на курсах Life-Set, Ви будете прикріплені до одного викладача - ментора. Це та людина, яка буде постійно керувати вашими заняттями, відповідати на Ваші запитання та надавати рекомендації.
+
+<h3 id="4-id">Кому повідомити про мою відсутність на занятті?
+</h3>
+<p>Про будь-яку відсутність слід повідомляти адміністратору електронною поштою чи написати в  телеграм не пізніше, ніж за 24 години до початку заняття (виняток - хвороба). В такому випадку ментор надішле Вам матеріали з проведеного заняття та надасть рекомендації.
+
+Відмовитись від курсу з поверненням коштів не можна. Невідвідування занять не є підставою для повернення коштів.
+<p>
+Перенести заняття можна при форматі індивідуального навчання за умови, що клієнт попросив про це заздалегідь (не менше ніж за 24 години до початку заняття, яке треба перенести), і у педагога є можливість запропонувати варіанти іншого часу для заняття.</p>
+
+<h3 id="5-id">Як і коли потрібно оплатити курс?
+</h3>
+    <p>Оплата мовних курсів в Life-Set здійснюється за системою початкового внеску, тобто передоплатою за місяць наперед. Чому так? Тому що це дисциплінує та підвищує Вашу мотивацію відвідувати заняття. Оплату необхідно здійснити не пізніше, ніж за 3 дні до запланованого початку занять, щоб напередодні ми могли зафіксувати оплату в системі та повідомити викладача про початок навчання. Оплату можна здійснити двома способами: шляхом переказу певної суми на банківський рахунок або платіжною чи кредитною карткою за допомогою системи PayPal.
+
+</p>
+
+
+    </div>
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+</body>
+
+</html>

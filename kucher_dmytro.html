@@ -1,0 +1,309 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Life-Set</title>
+    <link rel="icon" href="images/logo.png">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="kucher_dmytro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec7049765a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="specialists.html">Спеціалісти</a></li>
+            <li><a href="materials.html">Матеріали</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+         </ul>
+      </nav>
+
+       <div class="wrapper_login">
+        <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="specialists.html">Спеціалісти</a>
+        <a href="materials.html">Матеріали</a>
+        <a href="news.html">Новини</a>
+        <a href="contacts.html">Контакти</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/ukraine.png">UA</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="kucher_dmytro.pl.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/poland.png">PL</a>
+
+<a href="kucher_dmytro.en.html" onclick="changeLanguage('en')">
+    <img src="images/united-kingdom.png">EN</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+      <!-- <div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+   </div>
+    </div>
+
+
+<div class="all_info">
+    <div class="image">
+        <img class="photo" src="images/2_Dmytro.jpg"
+         alt="foto">
+        </div>
+
+
+
+
+<div class="container">
+    <ul class="social">
+        <a href="https://www.facebook.com/superteacherdv"
+           target="_blank">
+            <li class="social__item facebook">
+                <i class="fab fa-facebook-f">
+         </i></li></a>
+
+        <a href="https://www.instagram.com/d.s.set/"
+           target="_blank">
+        <li class="social__item instagram">
+            <i class="fab fa-instagram">
+        </i></li></a>
+
+        <a href="https://web.telegram.org/k/#@Superteacherdv"
+           target="_blank">
+            <li class="social__item telegram">
+                <i class="fab fa-telegram">
+
+                </i></li></a>
+    </ul>
+    </div>
+
+<button class="collapsible">Зміст</button>
+    <div class="content">
+      <ol>
+          <li><a href="#1-id">Хто я?</a></li>
+          <li><a href="#2-id">Чому зі мною?</a></li>
+          <li><a href="#3-id">Чим я можу бути корисним?</a></li>
+          <li><a href="#4-id">Послуги</a></li>
+          <li><a href="#5-id">Методика викладання</a></li>
+          <li><a href="#6-id">Курс навчання</a></li>
+          <li><a href="#7-id">Навчальні матеріали</a></li>
+        </ol>
+    </div>
+
+ <script>
+            let coll = document.getElementsByClassName('collapsible');
+            for (let i = 0; i < coll.length; i++) {
+                coll[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    let content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px'
+                             }
+                        })
+            }
+        </script>
+
+<div class="a lot of text">
+
+<h2 id="1-id">Хто я?</h2>
+
+            <p>Дмитро Кучер – викладач іноземних мов із стажем понад 10 років. Оффлайн та онлайн заняття англійської, німецької, польської!</p>
+<h2 id="2-id">Чому зі мною?</h2>
+
+        <ul>
+     <li class="text">Закінчив із відзнакою Запорізький державний університет, магістр (англійська філологія, англійська та німецька мова), диплом з відзнакою</li><p></p>
+
+    <li class="text">Пройшов курси/тренінги з викладання загальної англійської, німецької, підготовки до іспиту, нових та нестандартних методів викладання мов, курси з історії та культури Англії, Німеччини, Польщі.</li><p></p>
+
+    <li class="text">Працював у державних школах, викладав на курсах вивчення мов, у різних фірмах та організаціях, таких як Goodzon, Work and Travel, Skyeng, Vipol, Związek Polaków “Polonia”.</li><p></p>
+
+    <li class="text">Мої студенти та учні зараз працюють у Великій Британії, США, Канаді, Туреччині, Україні.</li><p></p>
+
+    <li class="text">Надавав послуги з перекладу для букмекерських контор у Великій Британії.</li><p></p>
+
+    <li class="text">Був перекладачем у шлюбних агенціях, допоміг дівчатам переїхати до США та Канади.</li><p></p>
+
+    <li class="text">Підготував понад 100 студентів до співбесіди у посольстві та до роботи у США.</li><p></p>
+
+    <li class="text">Окремими курсами викладав іноземні мови для різних спеціальностей.
+    </li><p></p>
+
+    <li class="text">Працював в агенціях з працевлаштування.
+    2020-2021 викладав англійську для студентів різних національностей (поляків,    українців   , молдаван, єгиптян, індусів, американців) у вечірній школі   Cosinus (Польща, Варшава)</li><p></p>
+
+    <li class="text">Працюю у державній школі у Варшаві.</li><p></p>
+
+    <li class="text">Навчаю за власною методикою онлайн, застосовуючи спеціальні принципи навчання, що ґрунтуються на психологічних особливостях студентів.</li><p></p>
+    </ul>
+
+<h2 id="3-id">Чим я можу бути корисним?</h2>
+        <ul>
+
+        <li class="text">Навчання в групах та індивідуально (офлайн та онлайн).
+         </li><p></p>
+
+         <li class="text">Корпоративне навчання.
+         </li><p></p>
+
+         <li class="text">Розмовний клуб із носіями мови (Speaking Club).
+         </li><p></p>
+
+         <li class="text">Підготовка до складання іспитів на сертифікати.
+         </li><p></p>
+
+         <li class="text">Послуги з перекладу.
+         </li><p></p>
+
+         <li class="text">Підготовка до співбесід та мовних тестів при прийомі на роботу за кордон.
+         </li><p></p>
+
+         <li class="text">Підготовка до подання документів до консульств.
+         </li><p></p>
+
+         <li class="text">Підготовка до навчання за кордоном.
+         </li><p></p>
+
+         <li class="text">Курси для дітей загальноосвітніх та спеціалізованих шкіл: заняття з дітьми спрямовані не лише на вивчення нового матеріалу, а й на розвиток логіки, критичного мислення та уважності, формування лідерських якостей та професійну орієнтацію.</li><p></p>
+
+     </ul>
+
+    <h2 id="4-id">Послуги</h2>
+        <ul>
+         <li class="text">Курси англійської.
+         </li><p></p>
+
+         <li class="text">Курси німецької.
+         </li><p></p>
+
+         <li class="text">Курси польської.
+         </li><p></p>
+
+         <li class="text">Юридична допомога при працевлаштуванні.
+         </li><p></p>
+
+         <li class="text">Допомога в адаптації в Польщі (оформлення дитини до школи, допомога у навчанні спочатку, екскурсії історичними місцями).
+         </li><p></p>
+
+         <li class="text">Допомога в отриманні карти побуту.
+         </li><p></p>
+
+         <li class="text">Підготовка до складання іспитів на знання мови.
+         </li><p></p>
+
+         <li class="text">Допомога у відкритті бізнесу.
+         </li><p></p>
+    </ul>
+
+<h2 id="5-id">Методика викладання</h2>
+
+            <p>Комунікативна методика у поєднанні з авторськими методами задля досягнення максимального ефекту. Методика дозволяє як довести до автоматизму використання всіх конструкцій мови, а й зрозуміти менталітет носіїв мови. Заняття проходять з урахуванням індивідуальних психофізичних особливостей та можливостей учнів, з урахуванням віку та стану здоров’я. Групи розраховані на студентів різного рівня підготовки та віку. Підбір курсів, кількості занять та їх тривалість визначаються залежно від цілей, здібностей та фінансових можливостей студентів.</p>
+
+<h2 id="6-id">Курс навчання</h2>
+
+    <p>Курс навчання складається з 6 рівнів відповідно до загальноєвропейських вимог:</p>
+   <ul>
+       <li> A1 Beginner (початківець) Учень розуміє та використовує базові повсякденні слова та вирази (вітання, знайомство, сім’я, професії тощо). Розуміє людей, які говорять чітко та повільно у рамках певних тем.  </li><p></p>
+
+       <li> A2 Elementary (елементарний) Учень може надавати інформацію про себе, розповідати про захоплення, орієнтуватися на території, запитувати необхідну інформацію. </li><p></p>
+
+       <li> B1 Intermediate (середній) Учень може спілкуватися на такі теми як навчання, вільний час, захоплення, може вступати в контакт і розмовляти на більшість тем, пов’язаних з подорожжю за кордоном та ситуаціями, пов’язаними з цим, може вільно розповідати про себе без відчутної нестачі коштів для цього може описувати переживання, мрії, плани, коротко наводити аргументи за і проти. </li><p></p>
+
+       <li> B2 Upper intermediate (Вище середнього) Учень може розуміти основну думку складного тексту на абстрактні та конкретні теми, включаючи обговорення на технічні теми. Вільне спілкування з носієм мови без комплексів та значних труднощів. Може складати продуманий та логічно побудований текст на тему. </li><p></p>
+
+       <li>C1 Advanced (Просунутий) Учень може розуміти імпліцитні моменти контенту тексту. Використовує необхідні слова зв’язки для зв’язку компонентів висловлювання. </li><p></p>
+
+       <li> C2 Mastery or proficiency (Дуже просунутий) Учень може розуміти практично все, що читає або чує, може висловлюватися спонтанно і швидко, розрізняючи відтінки значення фраз і виразів. </li><p></p>
+
+
+       Навчання різних рівнях має різні терміни. Все це обговорюється з викладачем індивідуально. Можливий достроковий перехід на високий рівень, як і зупинка на певних рівнях у випадках, якщо, наприклад, студент не пройде тест або не здасть іспит.
+       </ul>
+
+<h2 id="7-id">Навчальні матеріали</h2>
+
+    <p>Підручники зарубіжних видавництв (Oxford, MacMillan, Pearson, Hueber), власні розробки для прискорення навчання чи коригування успішності. Навчальні та художні фільми, музика, навчальні ігри.</p> <p>.</p><p>.</p>
+     <p>.</p><p>.</p>  <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p> <p>.</p><p>.</p>
+
+<p>Наскільки публікація була корисна?</p>
+    </div>
+<p>Натисніть на зірочки, щоб оцінити! (В розробці...)</p>
+
+
+
+
+
+
+
+<div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+    </div>
+    </body>
+</html>

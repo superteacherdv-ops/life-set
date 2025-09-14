@@ -1,0 +1,338 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+   <title>Life-Set</title>
+   <link rel="icon" href="/images/logo.png">
+   <link rel="stylesheet" href="specialists.css">
+   <script src="script.js" async></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+      <div class="conteiner-for-logo-menu">
+
+      <div class="logotip">
+         <a href="home.en.html">
+            <img src="images/Asset-42PNG.png" alt="logoti"> </a>
+      </div>
+
+
+      <nav class="navigation-menu">
+         <ul>
+            <li><a href="home.en.html">Home</a></li>
+            <li><a href="about.en.html">About</a></li>
+            <li><a href="questions.en.html">Questions</a></li>
+            <li><a href="prices.en.html">Prices</a></li>
+            <li><a href="contacts.en.html">Contacts</a></li>
+         </ul>
+      </nav>
+
+
+
+<div class="wrapper_login">
+       <div class="wrapper">
+    <input type="checkbox" id="check-menu">
+    <label for="check-menu"></label>
+    <div class="burger-line first"></div>
+    <div class="burger-line second"></div>
+    <div class="burger-line third"></div>
+    <div class="burger-line fourth"></div>
+    <nav class="main-menu">
+        <a href="home.en.html">home</a>
+        <a href="about.en.html">about</a>
+        <a href="questions.en.html">Questions</a>
+        <a href="prices.en.html">Proces</a>
+        <a href="contacts.en.html">contacts</a>
+
+    </nav>
+    </div>
+
+<div class="language_menu">
+  <button class="current-language"
+          onclick="toggleDropdown()">
+      <img src="images/united-kingdom.png">EN</button>
+  <div class="language-dropdown"
+       id="languageDropdown">
+<a href="specialists.html"
+       onclick="changeLanguage('ua')">
+        <img src="images/ukraine.png">UA</a>
+
+<a href="specialists.pl.html"
+   onclick="changeLanguage('pl')">
+    <img src="images/poland.png">PL</a>
+  </div>
+</div>
+
+
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("languageDropdown");
+    dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+  }
+
+  function changeLanguage(language) {
+    console.log("Language changed to: " + language);
+  }
+
+  document.addEventListener('click', function(event) {
+    var dropdown = document.getElementById("languageDropdown");
+    var button = document.querySelector('.current-language');
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+<!--<div class="login">
+    <a href="login.html"> Login </a>
+    </div>-->
+    </div>
+    </div>
+
+
+
+
+<h1>Specialists</h1>
+
+<div class="start">
+<h3><u>Life-Set</u> - is a team of professionals. We are confident in what we do. We are open to cooperation. For us, individual approach is important, respect for each other, our students and clients, ability to listen, hear and consider all wishes, support and give advice.
+</h3>
+    <br>
+<u>Values of our team:</u>
+
+    <li>Professionalism.</li>
+    <li>Customer orientation.</li>
+    <li>Trust.</li>
+    <li>Creativity.</li>
+    <li>Efficiency and motivation.</li>
+    <li>Continuous progress.</li>
+</div>
+
+
+
+<div class="dmytro_ludmila">
+    <div class="kucher_dmytro">
+        <div class="left-part">
+            <img src="images/Dmytro.jpg"
+                 alt="folo">
+            <p></p>  <a href="kucher_dmytro.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="kucher_dmytro.en.html"> <h2>Dmytro </h2> </a>
+                <ul>Co-founder of the Life-Set project, methodologist.
+                    <p></p>
+                    <p>Teacher of English, German, Polish.</p>
+                    <p>Experience: 16 years.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="ternovska_ludmila">
+        <div class="left-part">
+             <img src="images/Ludmyla.jpg"
+                  alt="folo">
+             <p></p>  <a href="ternovska_ludmila.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="ternovska_ludmila.en.html"> <h2>Ludmila </h2> </a>
+                <ol> Co-founder of the Life-Set project, creative director.
+                    <p>Teacher of French, English, Polish.</p>
+                    <p>Experience: 17 years.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--_________________________________________________________-->
+
+    <div class="valentyna_anastasia">
+    <div class="valentyna_viktiuk">
+        <div class="left-part">
+            <img src="images/Valentyna.jpg"
+                 alt="folo">
+            <p></p>  <a href="valentyna_viktiuk.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="valentyna_viktiuk.en.html"> <h2>Valentyna </h2> </a>
+                <ul> Teacher, mentor of English, German.
+                    <p></p>
+                    <p>Experience: 16 years.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="anastasia_chykirda">
+        <div class="left-part">
+             <img src="images/Anastasia.jpg"
+                  alt="folo">
+             <p></p>  <a href="anastasia_chykirda.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="anastasia_chykirda.en.html"> <h2>Anastasia </h2> </a>
+                <ol> Mentor of Polish language.
+                    <p>Experience: 2 years.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+        <div class="berivan_olga">
+    <div class="berivan_ildiz">
+        <div class="left-part">
+            <img src="images/Berivan.jpg"
+                 alt="folo">
+            <p></p>  <a href="berivan_ildiz.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="berivan_ildiz.en.html"> <h2>Berivan </h2> </a>
+                <ul>Mentor of English language, leader of conversation club.
+                    <p></p>
+                    <p>Experience: 8 years.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="olga_kravets">
+        <div class="left-part">
+             <img src="images/Olga.jpg"
+                  alt="folo">
+             <p></p>  <a href="olga_kravets.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="olga_kravets.ehtml"> <h2>Ola </h2> </a>
+                <ol> Teacher, mentor of French, English.
+                    <p>Experience: 13 years.</p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------------------------------------------->
+
+
+            <div class="bogdana_jacek">
+    <div class="bogdana_kovalchuk">
+        <div class="left-part">
+            <img src="images/Bogdana.jpg"
+                 alt="folo">
+            <p></p>  <a href="bogdana_kovalchuk.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="bogdana_kovalchuk.en.html"> <h2>Bogdana </h2> </a>
+                <ul>Mentor of Polish language.
+                    <p></p>
+                    <p>Experience: 2 years.</p>
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+<div class="jacek_chaladaj">
+    <div class="left-part">
+         <img src="images/Jacek.jpg"
+              alt="folo">
+         <p></p>  <a href="jacek_chaladaj.en.html">Learn more</a>
+    </div>
+
+    <div class="right-part">
+        <a href="jacek_chaladaj.en.html"> <h2>Jacek </h2> </a>
+            <ul> Native speaker, leader of Polish language conversation club.                                    <p>Experience: 2 years.</p>
+
+        </ul>
+    </div>
+</div>
+    </div>
+<div class="marianna_fatime">
+    <div class="marianna">
+        <div class="left-part">
+            <img src="images/Marianna.jpg"
+                 alt="folo">
+            <p></p>  <a href="marianna.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="marianna.en.html"> <h2>Marianna </h2> </a>
+                <ul> Expert in legalization.
+                    <p>Experience: 5 years in the field.</p>
+
+                    <p> </p>
+
+            </ul>
+        </div>
+    </div>
+     <div class="fatime_abel">
+        <div class="left-part">
+             <img src="images/Fatime.jpg"
+                  alt="folo">
+             <p></p>  <a href="fatime_abel.en.html">Learn more</a>
+        </div>
+
+        <div class="right-part">
+            <a href="fatime_abel.en.html"> <h2>Fatime </h2> </a>
+                <ol> Psychologist.
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--------------------------------------------------------------------->
+
+<br><br><br><br><br><br>
+    <h2>Join the team</h2>
+<div class="link">
+    <p>If our values are close to you, fill out the questionnaire and join our team of like-minded people!
+</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSdt8UKBsxthpBsgq-HFLH14dNCYrwGrlyOl2SZdphAE-slpyg/viewform?usp=sf_link"
+    target="_blank">Link</a>
+</div>
+
+
+ <div id="back_to_top" class="back-to-top">
+<svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+</div>
+<script>
+        $('.back-to-top').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 100) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
+</script>
+
+
+</body>
+
+</html>
